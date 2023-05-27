@@ -14,24 +14,8 @@ const videosArr = [
     'https://player.vimeo.com/external/510850877.hd.mp4?s=d5e9ed9ea40ba755e28512cce6c1ad00d92506f7&profile_id=174',
     'Lecture 3',
   ],
-  [
-    'https://player.vimeo.com/external/577442929.hd.mp4?s=95231c8a7fe2066ffb640204591b01a6c326b97c&profile_id=174',
-    'Lecture 4',
-  ],
-  [
-    'https://player.vimeo.com/progressive_redirect/playback/689925384/rendition/360p?loc=external&oauth2_token_id=1027659655&signature=5a819f11298d53cc1ed85837342f47ea61c8f95b9aeeb0c38edab72a80e0db78',
-    'Lecture 5',
-  ],
-  [
-    'https://player.vimeo.com/progressive_redirect/playback/688648666/rendition/720p?loc=external&oauth2_token_id=1027659655&signature=070a16d4b244bc11c2bd17b03e04e50460be3d2726ed554959a49fc05dbd0281',
-    'Lecture 6',
-  ],
-  [
-    'https://player.vimeo.com/progressive_redirect/playback/690770660/rendition/720p?loc=external&oauth2_token_id=1027659655&signature=3a048039957fd878fc72b809b9a0e5f2102eded879a83e00784ecd3ba5123614',
-    'Lecture 7',
-  ],
 ];
-const Video = () => {
+const Videofree = () => {
   const [videoSrc, setVideoSrc] = useState(videosArr[0][0]);
   return (
     <Stack direction={['column', 'row']} h={'100vh'}>
@@ -82,4 +66,4 @@ const Video = () => {
   );
 };
 
-export default Video;
+export default Videofree;
