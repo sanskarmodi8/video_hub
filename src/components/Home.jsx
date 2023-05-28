@@ -13,7 +13,7 @@ import { Text } from '@chakra-ui/react';
 const headingOptions = {
   pos: 'absolute',
   top: ["40%",'50%'],
-  left: ["40%",'50%'],
+  left: '50%',
   transform: 'translate(-50%,-50%)',
   textTransform: 'uppercase',
   p: ["2",'4'],
