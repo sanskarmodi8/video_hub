@@ -16,8 +16,8 @@ const headingOptions = {
   left: '50%',
   transform: 'translate(-50%,-50%)',
   textTransform: 'uppercase',
-  p: '2',
-  size: ['sm', '4xl'],
+  p: '4',
+  size: "4xl",
 };
 
 const Home = () => {
@@ -77,21 +77,26 @@ const MyCarousel = () => (
     showThumbs={false}
     showArrows={false}
   >
-    <Box w={'full'} h={['50vh', '100vh']}>
-      <Image src={img1} />
+    <Box w={'full'} h={'100vh'}>
+      <Image h={'full'} w={'full'} objectFit={'cover'} src={img1} />
       <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
         Watch The Future
       </Heading>
     </Box>
-    <Box w={'full'} h={['50vh', '100vh']}>
-      <Image src={img2} />
-      <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions} >
+    <Box w={'full'} h={'100vh'}>
+      <Image h={'full'} w={'full'} objectFit={'cover'} src={img2} />
+      <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>
         Future Is Gaming
       </Heading>
     </Box>
-    <Box w={'full'} h={['50vh', '100vh']}>
-      <Image src={img3} />
-      <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions} top={"40%"}>
+    <Box w={'full'} h={'100vh'}>
+      <Image h={'full'} w={'full'} objectFit={'cover'} src={img3} />
+      <Heading
+        bgColor={'whiteAlpha.600'}
+        color={'black'}
+        {...headingOptions}
+        
+      >
         Gaming On Console
       </Heading>
     </Box>
