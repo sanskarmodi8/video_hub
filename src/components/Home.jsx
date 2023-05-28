@@ -5,8 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import img1 from '../assets/1.jpg';
 import img2 from '../assets/2.jpg';
 import img3 from '../assets/3.jpg';
-import img4 from '../assets/4.jpg';
-import img5 from '../assets/5.png';
+import img4 from '../assets/4.png';
 import { Image } from '@chakra-ui/react';
 import { Heading } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react';
@@ -17,8 +16,8 @@ const headingOptions = {
   left: '50%',
   transform: 'translate(-50%,-50%)',
   textTransform: 'uppercase',
-  p: '4',
-  size: '4xl',
+  p: '2',
+  size: ['sm', '4xl'],
 };
 
 const Home = () => {
@@ -41,7 +40,7 @@ const Home = () => {
           alignItems={'center'}
           direction={['column', 'row']}
         >
-          <Image src={img5} h={['40', '400']} filter={'hue-rotate(-130deg)'} />
+          <Image src={img4} h={['40', '400']} filter={'hue-rotate(-130deg)'} />
           <Text
             letterSpacing={'widest'}
             lineHeight={'190%'}
@@ -71,35 +70,29 @@ const Home = () => {
 
 const MyCarousel = () => (
   <Carousel
-    autoPlay={true}
-    infiniteLoop={true}
+    autoPlay
+    infiniteLoop
     interval={2000}
     showStatus={false}
     showThumbs={false}
-    showArrows={true}
+    showArrows={false}
   >
-    <Box w={'full'} h={'100vh'}>
+    <Box w={'full'} h={['50vh', '100vh']}>
       <Image src={img1} />
       <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
         Watch The Future
       </Heading>
     </Box>
-    <Box w={'full'} h={'100vh'}>
+    <Box w={'full'} h={['50vh', '100vh']}>
       <Image src={img2} />
-      <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>
+      <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions} >
         Future Is Gaming
       </Heading>
     </Box>
-    <Box w={'full'} h={'100vh'}>
+    <Box w={'full'} h={['50vh', '100vh']}>
       <Image src={img3} />
-      <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>
+      <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions} top={"40%"}>
         Gaming On Console
-      </Heading>
-    </Box>
-    <Box w={'full'} h={'100vh'}>
-      <Image src={img4} />
-      <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>
-        Night Life Is Cool
       </Heading>
     </Box>
   </Carousel>
