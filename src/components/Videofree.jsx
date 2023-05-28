@@ -18,7 +18,7 @@ const videosArr = [
 const Videofree = () => {
   const [videoSrc, setVideoSrc] = useState(videosArr[0][0]);
   return (
-    <Stack direction={['column', 'row']} h={'100vh'}>
+    <Stack direction={['column', 'row']} h={'fit-content'}>
       <VStack w={'full'}>
         <video
           controls

@@ -34,7 +34,7 @@ const videosArr = [
 const Video = () => {
   const [videoSrc, setVideoSrc] = useState(videosArr[0][0]);
   return (
-    <Stack direction={['column', 'row']} h={'100vh'}>
+    <Stack direction={['column', 'row']} h={'fit-content'}>
       <VStack w={'full'}>
         <video
           controls
@@ -63,6 +63,7 @@ const Video = () => {
         alignItems={'stretch'}
         padding={'20'}
         spacing={'8'}
+        
       >
         {videosArr.map((item, index) => (
           <Button
