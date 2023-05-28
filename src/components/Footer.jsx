@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <Box bgColor={'blackAlpha.900'} minH={'40'} p={'16'} color={'white'}>
       <Stack direction={['column', 'row']}>
-        <VStack alignItems={'stretch'} w={'full'} px={'4'}>
+        <VStack alignItems={'stretch'} w={'full'} px={'4'} pb={"8"}>
           <Heading size="md" textTransform={'uppercase'} textAlign={["center", "left"]}>
             Subscribe to get all updates.
           </Heading>
@@ -41,6 +41,7 @@ const Footer = () => {
           w={'full'}
           borderLeft={['none', '1px solid white']}
           borderRight={['none', '1px solid white']}
+          pb={"8"}
         >
           <Heading textTransform={'uppercase'}>VIDEOHUB</Heading>
           <Text>All rights reserved.</Text>
