@@ -16,8 +16,8 @@ const headingOptions = {
   left: '50%',
   transform: 'translate(-50%,-50%)',
   textTransform: 'uppercase',
-  p: '4',
-  size: "4xl",
+  p: ["2",'4'],
+  size: ["2xl","4xl"],
 };
 
 const Home = () => {
